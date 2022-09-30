@@ -1,0 +1,595 @@
+\documentclass[12pt,fullpage]{article}
+
+
+%\usepackage[letterpaper, landscape, margin=1.5in]{geometry}
+
+\usepackage[paperwidth=8.5in, paperheight=11in,margin=1.0in]{geometry} 
+
+%\usepackage[letterpaper,margin=1.0in]{geometry}
+\usepackage[english]{babel}
+\usepackage[final,babel]{microtype}
+\frenchspacing
+ 
+\usepackage{calc,url}
+\newcounter{qz}\setcounter{qz}{0}
+\newcommand{\qz}{%\
+\setcounter{qz}{\value{qz}+1}
+\theqz \,\,}
+\newcounter{ex}\setcounter{ex}{0}
+\newcommand{\ex}{%\
+\setcounter{ex}{\value{ex}+1}
+Exam \theex}
+
+\usepackage[T1]{fontenc} 
+\usepackage{fourier}
+
+
+\newcounter{wk}\setcounter{wk}{0}
+\newcommand{\wk}{%\
+\setcounter{wk}{\value{wk}+1}
+\thewk \,\,}
+
+\begin{document}
+\large
+\begin{center}
+    \textbf{Numerical Analysis}  \\
+    {MATH 420--01, Spring \the\year} \\
+\end{center}
+
+\vskip0.25in
+\normalsize
+
+\begin{center}
+%\begin{minipage}{5.0in}
+\begin{description}
+    \item[Instructor:] Dr.\  Willis, Professor of Mathematics
+    \item[Office:]  WRNH 2144 
+    \item[Telephone:] 308 865-8868 or 308 865-8531 (Department Office)
+   \item[Email:] willisb@unk.edu
+  %  \item[Fax:] 308 865-1540
+   \item[Office Hours:] Monday, Wednesday, and  Friday, \mbox{10:00--11:00}; Tuesday and Thursday 9:30 -- 11:00; Monday and Wednesday 13:25 -- 15:30;  and by appointment.
+  
+\end{description}
+%\end{minipage}}
+\end{center}
+
+
+
+\subsubsection*{Course Objectives}
+
+ Students will learn the properties of IEEE numbers and IEEE arithmetic; students will learn how to analyze algorithms for time complexity, numerical stability,  and accuracy; students will learn numerical methods
+for interpolation;  students will learn the methods for numerical integration;  and students will learn methods for solving linear equations, nonlinear equations, and differential equations. Additionally, students will learn to 
+use the Julia programming language.
+
+\subsubsection*{Prerequisite}
+
+To be in this class, you must have already earned a passing grade in Calculus III (UNK's MATH 260).
+
+\subsubsection*{Course Resources}
+
+Our primary textbook is \emph{Tea Time Numerical Analysis}, by Leon Q. Brin, second edition.  This is an open-source textbook that can be legally downloaded from \url{http://lqbrin.github.io/tea-time-numerical/}. For
+some assistance using Julia, we will use the textbook \emph{First Semester in Numerical Analysis with Julia}, by Giray \"Okten.  This textbook is also open-source and it  can be downloaded from 
+\tiny  \url{https://open.umn.edu/opentextbooks/textbooks/first-semester-in-numerical-analysis-with-julia} \normalsize 
+
+
+Finally, we will use the Julia programming language.  It too is a free resource; download and install it from \url{https://julialang.org/downloads/}.  I suggest that you install version 1.0.5.
+
+
+\subsubsection*{Grading}
+
+Your course grade will be based on three in class examinations, homework assignments, and a comprehensive final examination. Each
+examination will be scaled to 100 points and the final examination will be scaled to 150 points.  The points available on each homework
+assignment will vary.  Your course average will be determined on the percent of the available points.
+
+Course grades will be based on a ten point scale; grades in the lower third of each decade will be a minus grade and grades in the
+upper third of each decade will be a plus grade. For example, a course average of \(86.7\) will earn you a course grade of B+; a course average
+of \(86.\overline{6}\) will earn you a course grade of B.
+
+\subsubsection* {Policies}
+
+
+All work you turn in for a grade must be your own.  If you need assistance in completing a homework assignment, you may ask me for help but nobody else. Googling for
+answers, seeking help from the Learning Commons or other faculty members,  or using solution keys from previous terms (either from UNK or other universities) is also prohibited.  Each homework assignment you turn in for a grade must include the Virginia Tech Honor code statement:
+
+\begin{quote}
+\fbox{``I have neither given nor received unauthorized assistance on this assignment.''}
+\end{quote}
+An assignment without this statement will earn a score of
+zero. Examinations are closed book and closed notes; using
+unauthorized materials while taking a test will earn you a failing
+course grade.  Regular class attendance and class participation are
+required. Your course grade will be reduced by one letter grade if
+you have more than six unexcused absences. Our course management
+polices are:
+
+\begin{enumerate}
+      
+\item If you are involved with an university event (athletics or student government sponsored event, for example) that
+conflicts with an examination or quiz, you will be allowed to make up the  work provided you make arrangements at least three days in
+advance.
+
+ 
+\item If you are ill and unable to attend class on an exam day, phone or email me \textbf{before, not after class} to make
+arrangements to make up the work. If you contact me \emph{after} class,
+it's unlikely that I will allow you to make up the work.
+
+\item Homework is in paper form is  due at the \emph{start} (not end) of class. If you are ill and  unable to attend class to turn in a homework assignment, you must contact me
+before the assignment is due. 
+
+
+
+\item The final examination will be \emph{comprehensive} and it will
+be given during the time scheduled by the University. Except for \emph{extraordinary circumstances}
+you must take the exam at this time.
+
+
+\item The course calendar may change. Changes to the schedule can be made in class, but not noted anywhere else. It is your responsibility to
+learn of changes to the schedule.
+ 
+\item Generally phones and other such devices  must be turned off and \emph{out of sight} during class.
+
+\item Unless I have given you permission to turn in the homework for a classmate, do not agree to do so.
+
+
+\item If you have questions about how your work has been graded, make
+an appointment with me immediately.
+
+\item All printed materials, in either paper or digital form, that I
+provide for you in this class, are for your own use. Re posting or
+sharing these materials with other persons is prohibited. Also,
+audio recording class lectures is allowed only by permission.
+
+\item Please regularly check Canvas  to verify that your scores have been recorded correctly.  If I made a mistake in recording one of
+your grades, I'll correct it provided you saved your paper.
+
+\end{enumerate}
+
+\subsubsection*{Examinations and Homework}
+
+Follow these guidelines while taking an examination or writing a solution to a homework question.
+
+\begin{enumerate}
+
+\item The work you turn in is expected to be \emph{accurate, complete, concise, neat}, and \emph{well-organized}.  \emph{You will not earn
+full credit on work that falls short of these expectations.}
+
+\item The major steps of your work \emph{must}  be explained using \emph{sentences.} In a  Jupyter worksheet, use the cell/cell=type feature to 
+to insert explanations of your calculations. Your work should have enough detail so that I know how you found the solution. 
+
+\item Please be kind to trees. Unless required, do not submit multiple paper pages of just numbers. Instead, suppress some intermediate results or 
+present the results graphically.
+
+
+\item While writing an examination, you may use a pencil, eraser, and a scientific calculator. If you are a non-native speaker of English,
+you may use a \emph{paper} translation dictionary. Although I understand the convenience, \emph{you may not use a phone for translation to English.}
+\emph{All other tools, a such as classnotes or other references materials are not allowed.} In particular, you may \emph{not} use a phone or other such
+device during an examination--this includes checking the time on a phone.
+
+
+\item For examinations, show your work.  No credit will be given for multi-step problems without the necessary work. Your solution must contain enough detail
+so that I am convinced that you could correctly work any similar problem. Also erase or clearly mark any work you want me to ignore; otherwise,
+I'll grade it.  
+
+\end{enumerate}
+
+
+\subsubsection*{Students with Disabilities or Those Who are Pregnant}
+
+It is the policy of the University of Nebraska at Kearney to provide flexible and individualized reasonable accommodation to students with documented disabilities. To receive accommodation services for a disability, students must be registered with UNK Disabilities Services for Students Office, 172 Memorial Student Affairs Building, 308-865-8988 or by email unkdso@unk.edu
+
+
+It is the policy of the University of Nebraska at Kearney to provide flexible and individualized reasonable accommodation to students who are pregnant. To receive accommodation services due to pregnancy, students must contact Cindy Ference in Student Health, 308-865-8219. The following link provides information for students and faculty regarding pregnancy rights:  \small \url{ http://www.nwlc.org/resource/pregnant-and-parenting-students-rights-faqs-college-and-graduate-students} \normalsize 
+
+\subsubsection*{Reporting Student Sexual Harassment, Sexual Violence or Sexual Assault}
+
+
+Reporting allegations of rape, domestic violence, dating violence, sexual assault, sexual harassment, and stalking enables the University to promptly provide support to the impacted student(s), and to take appropriate action to prevent a recurrence of such sexual misconduct and protect the campus community. Confidentiality will be respected to the greatest degree possible. Any student who believes she or he may be the victim of sexual misconduct is encouraged to report to one or more of the following resources:
+
+\begin{enumerate}
+
+\item Local Domestic Violence, Sexual Assault Advocacy Agency 308-237-2599
+
+\item Campus Police (or Security) 308-865-8911
+
+\item Title IX Coordinator 308-865-8655
+
+Retaliation against the student making the report, whether by students or University employees, will not be tolerated.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\newpage
+
+\subsubsection*{Course Calendar}
+
+We will try to adhere to the following schedule, but we will modify it
+if needed. The exam dates will only be changed for a compelling
+reason; we won't delay an exam because we are behind the
+schedule. Neither will an exam date be moved forward because we are
+ahead of the schedule.
+
+\vspace{0.1in}
+
+\begin{center}
+
+\begin{tabular}  {|l|l|l|l|}
+\hline
+{\bf Week}  & {\bf Week} &  {\bf Section(s)} & {\bf Topic(s)} \\
+\hline \hline 
+\wk    & 1/13 &    \S1.1 -- \S1.4  & Floating point numbers \& tools \hfill HW \phantom{1}\qz \\
+\wk    & 1/ &      & Introduction to Julia  \hfill HW \phantom{1}\qz \\
+\wk    & 1/27 &    \S2.1--\S2.2 & Root Finding  \hfill HW \phantom{1}\qz \\
+\wk    & 2/3  & \S2.3--\S2.5 &  Root Finding   \hfill HW \phantom{1}\qz \\
+\wk    & 2/10 &     &  Linear equations   \hfill \textbf{\ex\-\-, 14 Feb.}  \\
+\wk    & 2/17   &  &  Linear equations  \hfill HW \phantom{1}\qz   \\
+\wk    & 2/24     & \S3.1--\S3.2 & Interpolation \hfill HW \phantom{1}\qz  \\
+\wk   & 3/2   & \S3.3  &   Interpolation and least squares  \hfill HW \phantom{1}\qz \\
+\wk  &  3/9    & \S4.1--\S4.2 &  Numerical differentiation and integration \hfill  \textbf{ \ex, 13 March } \\ 
+\wk &  3/16     &   \S4.2 --\S4.5 &    Numerical differentiation and integration   \hfill HW \phantom{1}\qz    \hfill \\
+\wk  & 3/30  &   \S6.1--\S6.2 & Differential equations \hfill HW \phantom{1} \qz \\
+\wk   & 4/6  & \S6.3--\S6.4 & Differential equations \hfill HW \qz  \\
+\wk   & 4/13   & \S6.5  & Differential equations \hfill HW \qz  \\
+\wk   & 4/20   &    & PDEs  \hfill \textbf{ \ex, 24 April   } \\
+\wk   & 4/27    &  & PDEs    \\
+\wk   & 5/4       &  &   \hfill \textbf{ Final Exam, Wednesday 6 May, 08:00--10:00} \\ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\end{document}
+
+\vspace{0.1in}
+
+\begin{center}
+
+\begin{tabular}  {|l|r|l|l|}
+\hline
+{\bf Week}  & {\bf Week of} & {\bf Month}&  {\bf Topic(s)} \\
+\hline \hline
+\wk    & 12 & Jan  & algorithms and an introduction to Maxima (classnotes) \\\
+\wk    & 19 &     &  IEEE arithmetic and the condition number (Chapter 0) \\
+3    & 26 &     & interval arithmetic and running errors (classnotes) \\
+4    & \phantom{1}2 & Feb   &  solving equations, Chapter 1 \\
+5    & 9  &  & solving equations, Chapter 1; \textbf{Exam 1, 13 Feb.} \\
+6    & 16 & & numerical linear algebra, Chapter 2 \\
+7    & 23 &  & numerical linear algebra, Chapter 2 \\
+8    & \phantom{1}2 & Mar  & interpolation and least squares, Chapters 3 and 4 \\
+9    & 9 &    & numerical differentiation and integration, Chapter 5; \textbf{Exam 2, 13 March} \\
+10    & 23 &      & numerical differentiation and integration, Chapter 5 \\
+11   & 30 &     & initial value problems, Chapter 6 \\
+12   & 6  & April   &   initial value problems, Chapter 6 \\  
+13   & 13 &        & partial differential equations, Chapter 8 \\
+14   & 20 &     & partial differential equations, Chapter 8; \textbf{Exam 3, 24 April} \\
+15   & 27 &     & Fourier series  (classnotes) \\ \hline
+     &      &     & \textbf{Final Exam, Wednesday 6 May, 10:30--12:30} \\ \hline
+\end{tabular}
+\end{center}
+
+
+\end{document}
+
+\begin{tabular}  {|l|l|l|l|}
+\hline
+{\bf Week}  & {\bf Week of} & {\bf Month}&  {\bf Topic(s)} \\
+\hline \hline
+1    & \phantom{1}9 &Jan  & Introduction \\
+2    & 16 &   & Floating point numbers \\
+3    & 23 &  & Condition number \& relative difference \\
+4    & 30 &  & Floating point arithmetic \\
+5    & \phantom{1}6 &Feb & Sums \& hypergeometic functions; \textbf{Exam 1, Friday, 11 Feb.} \\
+6    & 13 &    & Linear algebra \\
+7    & 20 &     & Matrix norms and condition numbers \\
+8    & 27 &     & LU factorization \\
+9    & \phantom{1}6 & Mar      & Eigenvalues \\
+10   & 20 &    & Least squares; \textbf{Exam 2, Friday, 25 March} \\
+11   &   27   &  & Interpolation \& approximation \\
+12   &   \phantom{1}3 & April   & Nonlinear equations \\
+13   &   10 &     &  Numerical Integration \\
+14   &   17 &     & Finite differences; \textbf{Exam 3, Friday, 22 April} \\
+15   &   24 &     & Partial Differential Equations \\ \hline
+     &      &     & \textbf{Final Exam, Wednesday, 3 May, 8:00--10:00} \\ \hline
+\end{tabular}
+
+3    & 24  & \S2.3---\S2.4  & Norms and condition numbers \\
+4    & 31  & \S3.1---\S3.3  & Least squares \\
+5    & 7 Feb & \S4.1           & Eigenvalues; {\bf Exam 1, Friday, 10 Feb}\\ \hline
+6    & 14 Feb & \S4.2           & Eigenvalues  \\
+7    & 21 & \S5.1---\S5.2  & Nonlinear equations \\
+8    & 28  & \S7.1---\S7.2  & Interpolation \& Approximation \\
+9    & 7 Mar  & \S8.1---\S8.3    & Numerical integration; {\bf Exam 2, Friday, 24 March}\\
+\hline
+10   & 21 Mar & \S8.4           & Adaptive Integration \\
+11   & 28 & \S8.7, \S9.1---\S9.2  & Finite Differences and Initial Value Problems \\
+12   & 4 Apr & \S9.3---\S9.4  & Differential Equations  \\
+13   & 11  & \S11.1---\S11.2 & Partial Differential Equations \\
+14   & 18   & \S11.2  &   Partial Differential Equations; {\bf Exam 3, Friday. 21 April} \\
+15   &  & \S12.1---\S12.3  & Fast Fourier Transform \\ \hline
+16    &  & \S1.1---\S12.3    &  {\bf Final Exam Wednesday 3 May 8:00--10:00}  \\
+\hline
+\end{tabular}
+\end{center}
+\end{document}
+
+
+   1.  Scientific Computing
+   2. Systems of Linear Equations
+   3. Linear Least Squares
+   4. Eigenvalue Problems
+   5. Nonlinear Equations
+   6. Optimization
+   7. Interpolation
+   8. Numerical Integration and Differentiation
+   9. Initial Value Problems for Ordinary Differential Equations
+  10. Boundary Value Problems for Ordinary Differential Equations
+  11. Partial Differential Equations
+  12. Fast Fourier Transform
+  13. Random Numbers and Stochastic Simulation 
+
+
+
+
+
+
+
+
+
+
+\begin{center}
+
+\begin{tabular}  {|l|l|l|l|}
+\hline
+{\bf Week}  & {\bf Week of} & {\bf Month}&  {\bf Topic(s)} \\
+\hline \hline
+1    & 14 & Jan  & Floating point numbers, Chapter 0 \\
+2    & 21 &     & The condition number \& IEEE arithmetic, classnotes \\
+3    & 28 &     & Running errors \& IEEE arithmetic, classnotes \\
+4    & \phantom{1}4 & Feb   &  Solving equations, Chapter 1 \\
+5    & 11  &  & Solving equations, Chapter 1; \textbf{Exam 1, 15 Feb.} \\
+6    & 18 & & Numerical linear algebra, Chapter 2 \\
+7    & 25 &  & Numerical linear algebra, Chapter 2 \\
+8    & \phantom{1}3 & Mar  & Interpolation and least squares, Chapters 3 and 4 \\
+9    & 10 &    & Numerical differentiation and integration, Chapter 5 \\
+10    & 24 &      & Numerical differentiation and integration, Chapter 5;   \textbf{Exam 2, 28 March} \\
+11   & 31 &     & Initial value problems, Chapter 6 \\
+12   & \phantom{1}7  & April  &   Initial value problems, Chapter 6 \\  
+13   & 14 &       & Partial differential equations, Chapter 8 \\
+14   & 21 &     & Partial differential equations, Chapter 8; \textbf{Exam 3, 25 April} \\
+15   & 28 &     & Fourier series, classnotes \\ \hline
+     &      &     & \textbf{Final Exam, Wednesday 6 May, 10:30--12:30} \\ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+
+
+\end{document}
+
+\subsubsection*{Prerequisites }
+
+A three semester calculus sequence should provide you with
+the background needed for this class.  If you are uncertain
+if you are ready for this class, please speak with me.
+
+\subsubsection*{Grading }
+
+Your course grade will be based on three examinations,
+homework assignments, and a comprehensive final
+examination.  The grading weights are
+
+\vspace{0.1in}
+
+\fbox{
+\begin{minipage}{4.0in}
+   Homework assignments \dotfill 35\% total \\
+   Three examinations \dotfill 15\% each \\
+   Final examination \dotfill 20\%  \phantom{each}
+\end{minipage}
+}
+
+\vspace{0.1in}
+
+\noindent Your home work grade will be based on the percent of the total available
+points.
+
+
+\subsubsection*{Homework}
+
+Throughout the term you will be given problems that are to
+be turned in for a grade.  The work you turn in
+is expected to be {\em accurate, complete, concise, neat,}
+and {\em well-organized.} The major steps of your
+calculations should be explained using English sentences.
+Homework assignments are due promptly at the start of class
+the day they are due. {\em Late homework will not be
+accepted.}
+
+{\em Unless otherwise specified, all homework is to be
+completed on your own.} If you are found in violation of
+this policy, you will receive a zero on that
+assignment.  If you are struggling with a homework  assignment, please ask
+me for assistance. For everyone's benefit, I request
+that you  ask me questions about assignments days, not hours, before it is due.
+
+\subsubsection*{ Examinations}
+
+Your three examinations and the final examination will
+be in class and will be closed book and notes.  The
+examinations are scheduled for {\em Friday 15 February},
+{\em Friday 29 March}, and  {\em Friday 19 April}.
+The final examination will be {\em Wednesday 8 May}
+from 13:00--15:00.
+
+\subsubsection*{Policies}
+
+Regular class attendance and class participation are
+required.  Please arrive to class on time. If have more than
+five unexcused absences, your course grade will be reduced by
+at least one half a letter grade.
+
+If a exam conflicts with an official university sponsored
+event, you will be allowed to take the exam early
+provided you make arrangements at least four days before
+the test.  Permission to take a test early for other
+reasons will be given at my discretion.
+
+If you are ill and are not able to take a test, you must call
+or email me {\em before the test.} You will not be
+allowed to take a test after I have returned the
+test to the class.  Since I almost always return tests
+the following class day, it is imperative that you make
+arrangements will me without delay.
+
+The final examination will be comprehensive.  It will be
+given at the time determined by the University schedule.
+(XXXX {\sc p.m.}) Except for extraordinary circumstances,
+requests for taking the final examination at a different
+time will not be granted.  All such requests must be made
+before travel plans are made.
+
+If your course average is $x$, your final grade
+will be assigned according the function
+
+\[ \mbox{grade}(x) =
+  \left\{ \begin{array}{ll}
+
+         F, & x \leq 60  \\
+
+         D, &   60 < x \leq 65 \\
+
+         D+, &  65 < x \leq 70 \\
+
+         C,  &  70 < x \leq 75 \\
+
+         C+, &  75 < x \leq 80 \\
+
+         B,  &  80 < x \leq 86 \\
+
+         B+, &  86 < x \leq 93 \\
+
+         A,  &  93 < x
+
+     \end{array}
+    \right.
+\]
+
+
+
+Incomplete grades will be assigned according to University and
+Departmental policies.
+
+
+
+\subsubsection*{Office Hours and Getting in Touch with Me}
+
+
+
+My office hours are listed on my office door and on this
+syllabus.  You can also make an appointment for a specific
+time to see me.  Additionally, anytime that I am in my
+office, I will be glad to help you unless I am terribly
+pressed for time.
+
+
+
+\newpage
+
+
+
+\subsubsection*{Course Calendar}
+
+
+
+We will try to adhere to the following schedule, but we
+
+will modify it if needed.
+
+
+
+\vspace{0.1in}
+
+\begin{center}
+
+
+
+\begin{tabular}  {|l|l|l|}
+
+\hline
+
+Week  & Section(s) &  Topic(s) \\
+
+\hline \hline
+
+1     & \S1.1 -- 1.3  & Floating point numbers \\
+
+2     & \S2.1 -- 2.2  & Linear equations \\
+
+3     & \S2.3 -- 2.4  & Norms and condition
+
+numbers \\
+
+4     & \S3.1 -- 3.3  & Least squares \\
+
+5     & \S4.1        & Eigenvalues  \\ \hline
+
+6     & \S4.2        & Eigenvalues and first exam, Monday
+
+16 Feb \\
+
+7     & \S5.1        & Nonlinear equations \\
+
+8     & \S5.2        & Nonlinear equations \\
+
+9     & \S7.1        & Interpolation \\
+
+10    & \S7.2        & Interpolation   \\ \hline
+
+11    & \S8.1 -- 8.2  & Numerical integration and second exam,
+
+Monday 30 March \\
+
+12    & \S8.3 -- 8.4  & Adaptive and Gaussian Quadrature \\
+
+13    & \S8.7, 9.1   & Finite differences and Differential
+
+Equations \\
+
+14   &  \S9.2 -- 9.4  & Differential Equations \\
+
+15   &  \S12.1 -- 12.3  & Fast Fourier Transform, third
+
+exam due Wednesday 6 May \\ \hline
+
+     & \S1.1 -- 12.3    &  Final exam XXXXX  \\
+
+\hline
+
+\end{tabular}
+
+\end{center}
+
+
+
+\end{document}
+
+
+
+
+
