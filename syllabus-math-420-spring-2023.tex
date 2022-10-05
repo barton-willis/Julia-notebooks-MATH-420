@@ -16,9 +16,7 @@
 \usepackage[nodayofweek,level]{datetime}
 \usepackage{calc,url}
 \newcounter{qz}\setcounter{qz}{0}
-\newcommand{\qz}{%\
-\setcounter{qz}{\value{qz}+1}
-\textbf{ \theqz} \,}
+\newcommand{\qz}{\setcounter{qz}{\value{qz}+1}\textbf{ \theqz}}
 
 \newcounter{hw}\setcounter{hw}{0}
 \newcommand{\hw}{%\
@@ -33,7 +31,6 @@ Exam \theex}
 \usepackage{fourier}
 \usepackage[T1]{fontenc}
 
-%\usepackage{tgschola} %to look retro
 \newenvironment{mypar}[2]
   {\begin{list}{}%
     {\setlength\leftmargin{#1}
@@ -84,11 +81,12 @@ Exam \theex}
 \newcommand{\room}{Discovery Hall, room  383}
 \newcommand{\meetingtime}{This class meets Monday, Wednesday, and Friday  from 
 	9:05\PM{}  --  9:55 \PM}
-\newcommand{\finaldateandtime}{Wednesday 17 May \the\year{} from 8:00\AM{}--10:00\PM}
+\newcommand{\ay}{2023}
+\newcommand{\finaldateandtime}{Wednesday 17, May  from 8:00\AM{}--10:00\PM}
 \newcommand{\finalexam}{The final exam will be comprehensive and it 
-will be given on Wednesday 17 May \the\year from 8:00\AM{}--10:00\PM}  
-\newcommand{\officehours}{ Monday, Wednesday, and Friday 10:00\AM{} -- 11:00\AM,
-    Tuesday and Thursday 9:30\AM -- 11:00\AM, and by appointment.}
+will be given on Wednesday, 17 May from 8:00\AM{}--10:00\PM}  
+\newcommand{\officehours}{ Monday, Wednesday, and Friday \mbox{10:00\AM{} -- 11:00\AM},
+    Tuesday and Thursday \mbox{9:30\AM -- 11:00\AM}, and by appointment.}
 \begin{document}
 \cleanlookdateon% Remove ordinal day reference
 \shortdate
@@ -97,7 +95,7 @@ will be given on Wednesday 17 May \the\year from 8:00\AM{}--10:00\PM}
 \begin{center}
     \textbf{\coursename}  \\
     {\coursenumber--\sectionnumber} \\
-     {\term \the\year} \\
+     {\term \ay} \\
 \end{center}
 
 \vskip0.25in
@@ -118,19 +116,17 @@ will be given on Wednesday 17 May \the\year from 8:00\AM{}--10:00\PM}
 
 \begin{mypar}{0.25in}{0.25in} 
 
-      \textbf{First Homework due} \dotfill  \textbf{\printdate{4/2/\the\year}}  \\
-       \textbf{Exam 1} \dotfill \textbf{\printdate{24/2/\the\year}}  \\
-    \textbf{Exam 2} \dotfill  \textbf{\printdate{31/3/\the\year}} \\
-    \textbf{Exam 3} \dotfill \textbf{\printdate{5/4/\the\year}} \\
-         \textbf{Final exam} \dotfill  \textbf{\finaldateandtime}
+      \textbf{First Homework due} \dotfill  \textbf{Saturday, \printdate{4/2/\the\year}}  \\
+       \textbf{Exam 1} \dotfill \textbf{Friday, \printdate{24/2/\the\year}}  \\
+    \textbf{Exam 2} \dotfill  \textbf{Friday, \printdate{31/3/\the\year}} \\
+    \textbf{Exam 3} \dotfill \textbf{Friday, \printdate{5/4/\the\year}} \\
+         \textbf{Final exam} \dotfill  \textbf{Wednesday, \printdate{17/5/\the\year}}
 \end{mypar}
     \subsubsection*{Class meeting times}
 
 \meetingtime{} in \room.
 
-\subsubsection*{Final Exam}
 
-\finalexam{} in \room.
 
 \subsubsection*{Course Objectives}
 
@@ -156,7 +152,10 @@ On completion of this course, students will
 \subsubsection*{Prerequisite}
 
 To be in this class, you must have already earned a passing grade in Calculus II (UNK's MATH 202).
-\footnote{The catalog gives the prerequisite as MATH 260--eventually this will change to MATH 202.}
+
+\subsubsection*{Final Exam}
+
+\finalexam{} in \room.
 
 \subsubsection*{Course Resources}
 
@@ -170,9 +169,12 @@ payment.\footnote{\tiny \url{https://open.umn.edu/opentextbooks/textbooks/first-
 
 \item Class notes that are written on the board or distributed via Canvas.
 
-\item Reliable Internet access.
+\item Reliable internet access.
 
-\item  An Internet connected computer (not just a phone or tablet) 
+\item  An internet connected computer (not just a phone or tablet) 
+
+\item The Julia programming language, the Jupyter notebook, and the Gadfly
+      graphics package.
 
 \item Pencils, erasers, notebook for note taking. Colored pens or pencils are nice 
 for note taking.
@@ -181,12 +183,12 @@ for note taking.
  \end{enumerate}
 
 
-\subsubsection*{Gradiung}
+\subsubsection*{Grading}
  Your course grade will be based on weekly in class work, three midterm exams, and a 
  comprehensive 
  final exam; specifically:
  \begin{mypar}{0.25in}{0.25in}
-       \textbf{Homework}  \emph{15 ten point assignments}  \dotfill 150 (total) \\
+       \textbf{Homework}  \emph{10 fifteen point assignments}  \dotfill 150 (total) \\
        \textbf{Mid-term Exams 1,2, and 3} \emph{100 points each} \dotfill 300 (total)\\
           \textbf{Comprehensive Final exam} \dotfill 150 (total)
  \end{mypar}
@@ -215,7 +217,7 @@ for note taking.
  are required for each of the twelve letter grades D- through A+. For
  example, a point total of \Bp\/  points will earn you a grade of B+,  and 
  a point total of \Am\/ points will earn you a grade of A-. If you earn a point
- total of \F\/  or less, you a failing course grade.
+ total of \F\/  or less, you will earn a failing course grade.
   
   \vspace{0.1in}
       \begin{minipage}{5.5in}
@@ -308,7 +310,53 @@ Retaliation against the student making the report, whether by students or Univer
 
 \end{enumerate}
 
+\subsubsection*{Academic Honesty Policy}
 
+Academic honesty is essential to the existence and integrity of an institution of higher education. The
+responsibility for maintaining that integrity is shared by all members of the academic community. To
+further serve this end, the University of Nebraska at Kearney has a policy relating to academic integrity.
+The maintenance of academic honesty and integrity is a vital concern of the University community. Any
+student found in violation of the standards of academic integrity may be subject to both academic and
+disciplinary sanctions. Academic dishonesty includes, but is not limited to, the following:
+
+\paragraph{Cheating:} Copying or attempting to copy from an academic test or examination of another student; using
+or attempting to use unauthorized materials, information, notes, study aids or other devices for an academic
+test, examination or exercise; engaging or attempting to engage the assistance of another individual in
+misrepresenting the academic performance of a student; or communicating information in an unauthorized
+manner to another person for an academic test, examination or exercise.
+
+\paragraph{Fabrication and falsification:} Falsifying or fabricating any information or citation in any academic exercise,
+work, speech, test or examination. Falsification is the alteration of information, while fabrication is the
+invention or counterfeiting of information.
+
+\paragraph{Plagiarism:} Presenting the work of another as one's own (i.e., without proper acknowledgment of the source)
+and submitting examinations, theses, reports, speeches, drawings, laboratory notes or other academic work
+in whole or in part as one's own when such work has been prepared by another person or copied from another
+person.
+
+\paragraph{Abuse of academic materials and/or equipment:} Destroying, defacing, stealing, or making inaccessible library
+or other academic resource material.
+
+\paragraph{Complicity in academic dishonesty:} Helping or attempting to help another student to commit an act of
+academic dishonesty.
+
+\paragraph{Falsifying grade reports:} Changing or destroying grades, scores or markings on an examination or in an
+instructor's records.
+
+\paragraph{Misrepresentation to avoid academic work:} Misrepresentation by fabricating an otherwise justifiable excuse
+such as illness, injury, accident, etc., in order to avoid or delay timely submission of academic work or to
+avoid or delay the taking of a test or examination.
+
+\paragraph{Other Acts of Academic Dishonesty:} Academic units and members of the faculty may prescribe and give
+students prior written notice of additional standards of conduct for academic honesty in a particular course,
+and violation of any such standard shall constitute a violation of the Code.
+
+Under \S 2.9 of the Bylaws of the Board of Regents of the University of Nebraska, the respective colleges
+of the University have responsibility for addressing student conduct solely affecting the college. Just as the
+task of inculcating values of academic honesty resides with the faculty, the college faculty are entrusted with
+the discretionary authority to decide how incidents of academic dishonesty are to be resolved. For more
+information, please visit UNK's Procedures and Sanctions for Academic Integrity and the Student Code of
+Conduct.
 
 
 
@@ -331,9 +379,7 @@ reason; we won't delay an exam because we are behind the
 schedule. Neither will an exam date be moved forward because we are
 ahead of the schedule.
 
-Section numbers for Chapter 6 are from \emph{Tea Time Numerical Analysis.}  
-
-Homework assignments are due at 23:59 local time on Saturday on the week they are assigned. Homework assignments 1 and 2 are due on Saturday 6 February \the\year, for example.
+Homework assignments are due at 23:59 local time on Saturday on the week they are assigned. 
 
 \vspace{0.1in}
 
@@ -344,7 +390,7 @@ Homework assignments are due at 23:59 local time on Saturday on the week they ar
 {\bf Week}  & {\bf Week} &  {\bf Section(s)} & {\bf Topic(s)} \\
 \hline \hline 
 \wk    & 1/25 &    \S1.2   &   Introduction to Julia   \hfill \\
-\wk    & 2/1 & \S1.1      &  Floating point numbers \& calculus tools   \hfill \textbf{HW  \qz,  HW \qz} \\
+\wk    & 2/1 & \S1.1      &  Floating point numbers \& calculus tools   \hfill \textbf{HW  \qz  HW \qz} \\
 \wk    & 2/8 &    \S2.1 & Errors and convergence rates    \hfill \textbf{HW  \qz} \\
 \wk    & 2/15  & \S2.2 -- \S2.7 &  Root Finding   \hfill  \textbf{HW \qz} \\
 \wk    & 2/22 &  \S2.2--\S2.7   &  Root Finding    \hfill \textbf{\ex\-\-, 26 February}   \\
