@@ -82,9 +82,9 @@ Exam \theex}
 \newcommand{\meetingtime}{This class meets Monday, Wednesday, and Friday  from 
 	9:05\PM{}  --  9:55 \PM}
 \newcommand{\ay}{2023}
-\newcommand{\finaldateandtime}{Wednesday 17, May  from 8:00\AM{}--10:00\PM}
+\newcommand{\finaldateandtime}{Wednesday 17, May  from 8:00\AM{}--10:00\AM}
 \newcommand{\finalexam}{The final exam will be comprehensive and it 
-will be given on Wednesday, 17 May from 8:00\AM{}--10:00\PM}  
+will be given on Wednesday, 17 May from 8:00\AM{}--10:00\AM}  
 \newcommand{\officehours}{ Monday, Wednesday, and Friday \mbox{10:00\AM{} -- 11:00\AM},
     Tuesday and Thursday \mbox{9:30\AM -- 11:00\AM}, and by appointment.}
 \begin{document}
@@ -116,11 +116,11 @@ will be given on Wednesday, 17 May from 8:00\AM{}--10:00\PM}
 
 \begin{mypar}{0.25in}{0.25in} 
 
-      \textbf{First Homework due} \dotfill  \textbf{Saturday, \printdate{4/2/\the\year}}  \\
-       \textbf{Exam 1} \dotfill \textbf{Friday, \printdate{24/2/\the\year}}  \\
-    \textbf{Exam 2} \dotfill  \textbf{Friday, \printdate{31/3/\the\year}} \\
-    \textbf{Exam 3} \dotfill \textbf{Friday, \printdate{5/4/\the\year}} \\
-         \textbf{Final exam} \dotfill  \textbf{Wednesday, \printdate{17/5/\the\year}}
+      \textbf{First Homework due} \dotfill  \textbf{\printdate{4/2/\the\year}}  \\
+       \textbf{Exam 1} \dotfill \textbf{\printdate{24/2/\the\year}}  \\
+    \textbf{Exam 2} \dotfill  \textbf{\printdate{3/4/\the\year}} \\
+    \textbf{Exam 3} \dotfill \textbf{\printdate{5/5/\the\year}} \\
+         \textbf{Final exam} \dotfill  \textbf{\printdate{17/5/\the\year}}
 \end{mypar}
     \subsubsection*{Class meeting times}
 
@@ -163,7 +163,7 @@ To be in this class, you must have already earned a passing grade in Calculus II
 
 \item Our textbook is \emph{First Semester in Numerical Analysis with Julia,} by Giray Ökten.  This is an open-source 
 textbook that can be legally downloaded, printed, and  used without 
-payment.\footnote{\tiny \url{https://open.umn.edu/opentextbooks/textbooks/first-semester-in-numerical-analysis-with-julia}.  \normalsize} 
+payment.\footnote{ \url{https://open.umn.edu/opentextbooks/textbooks/first-semester-in-numerical-analysis-with-julia}.  \normalsize} 
 
 \item A free account on UNL's supercomputer.
 
@@ -171,7 +171,7 @@ payment.\footnote{\tiny \url{https://open.umn.edu/opentextbooks/textbooks/first-
 
 \item Reliable internet access.
 
-\item  An internet connected computer (not just a phone or tablet) 
+\item  An internet connected computer (not just a phone or tablet). 
 
 \item The Julia programming language, the Jupyter notebook, and the Gadfly
       graphics package.
@@ -184,17 +184,16 @@ for note taking.
 
 
 \subsubsection*{Grading}
- Your course grade will be based on weekly in class work, three midterm exams, and a 
- comprehensive 
- final exam; specifically:
+ Your course grade will be based on homework, three midterm exams, and a 
+ comprehensive final exam; specifically:
  \begin{mypar}{0.25in}{0.25in}
-       \textbf{Homework}  \emph{10 fifteen point assignments}  \dotfill 150 (total) \\
+       \textbf{Homework}  \emph{11 fifteen point assignments}  \dotfill 165 (total) \\
        \textbf{Mid-term Exams 1,2, and 3} \emph{100 points each} \dotfill 300 (total)\\
           \textbf{Comprehensive Final exam} \dotfill 150 (total)
  \end{mypar}
 
  
- \FPeval{\points}{round(150+300+150,0)}
+ \FPeval{\points}{round(165+300+150,0)}
  
  \FPeval{\F}{round(\points*0.6-1,0)}
  \FPeval{\Dm}{round(\points*0.6,0)}
@@ -212,8 +211,7 @@ for note taking.
  \FPeval{\Am}{round(\points*0.9,0)}
  \FPeval{\A}{round(\points*0.933,0)}
  \FPeval{\Ap}{round(\points*0.98,0)}
- 
- The following table shows the \emph{minimum} number of points (out of \points) that
+\noindent The following table shows the \emph{minimum} number of points (out of \points) that
  are required for each of the twelve letter grades D- through A+. For
  example, a point total of \Bp\/  points will earn you a grade of B+,  and 
  a point total of \Am\/ points will earn you a grade of A-. If you earn a point
@@ -243,7 +241,43 @@ for note taking.
  \end{mypar} 
  \end{minipage}
 
+ \subsubsection*{Course Calendar}
 
+ We will try to adhere to the following schedule, but we will modify it
+ if needed. The exam dates will only be changed for a compelling
+ reason; we won't delay an exam because we are behind the
+ schedule. Neither will an exam date be moved forward because we are
+ ahead of the schedule.
+ 
+ Homework assignments are due at 23:59 local time on Saturday on the week they are assigned. 
+ 
+ \vspace{0.1in}
+ 
+ \begin{center}
+ 
+ \begin{tabular}  {|l|l|l|l|}
+ \hline
+ {\bf Week}  & {\bf Week} &  {\bf Section(s)} & {\bf Topic(s)} \\
+ \hline \hline 
+ \wk    & 1/23 &    \S1.2   &   Introduction to Julia   \hfill \\
+ \wk    & 1/30 & \S1.1      &  Floating point numbers \& calculus tools   \hfill \textbf{HW  \qz,  HW \qz} \\
+ \wk    & 2/6 &    \S2.1 & Errors and convergence rates    \hfill \textbf{HW  \qz} \\
+ \wk    & 2/13  & \S2.2 -- \S2.7 &  Root Finding   \hfill  \textbf{HW \qz} \\
+ \wk    & 2/20 &  \S2.2--\S2.7   &  Root Finding    \hfill \textbf{\ex\-\-, 24 February}   \\
+ \wk    & 2/27    &  &  Linear equations  \hfill  \textbf{HW  \qz }  \\
+ \wk    & 3/6    &  &  Linear equations  \hfill  \textbf{HW  \qz }  \\
+ \wk    & 3/20     & \S3.1--\S3.4 & Interpolation \hfill \textbf{ HW  \qz }   \\
+ \wk    & 3/27   & \S3.1 -- \S3.4   &   Interpolation   \hfill \textbf{ HW  \qz} \\
+ \wk    & 4/3   & \S4.1--\S4.2 &  Numerical  integration  \hfill \textbf{\ex\-\-, 7 April} \\
+ \wk    & 4/10    &   \S4.3 --\S4.4 &   Numerical integration    \hfill  \textbf{ HW  \qz} \\
+ \wk    & 4/17 &   \S5.1--\S5.2 & Discrete \& continuous least squares  \hfill \textbf{HW    \qz} \\
+ \wk    & 4/24  & \S5.3 &  Orthogonal polynomials and least squares  \hfill \textbf{HW \qz}   \\
+ \wk    & 5/1  &   & Differential equations \hfill  \textbf{ \ex\-\-\-, 5 May}     \\
+ \wk    & 5/8  &     & Differential equations   \hfill \\
+ \wk    & 5/15       &  &   \textbf{Final Exam, \finaldateandtime} \\ \hline
+ \end{tabular}
+ \end{center}
+ 
 
 
 \subsubsection* {Policies}
@@ -255,16 +289,20 @@ for note taking.
 answers, seeking help from the Learning Commons or other faculty members,  or using solution keys from previous terms (either from UNK or other universities) is also prohibited.  Each homework assignment you turn in for a grade must include the statement:
 
 \begin{quote}
-\fbox{``I have neither given nor received unauthorized assistance on this assignment.''}
+\fbox{I have neither given nor received unauthorized assistance on this assignment.}
 \end{quote}
 Using unauthorized materials while taking a test will earn you a failing course grade. Each exam will specify what resources are allowed. 
 
  \item The final examination will be \emph{comprehensive}. It will be given on Wednesday 5 May from 8:00 am to 10:00 am.
 
 
- \item Generally, weekly problem sets are due at 11:59 pm local time each Saturday. If you have an extended illness that keeps you from completing the homework, contact me immediately. Since homework is turned in electronically, requests to 
+ \item Homework is due at 11:59 \PM local time on Saturday. If you have an 
+ extended illness that keeps you from completing the homework, contact
+  me immediately. Since homework is turned in electronically, requests to 
 turn in homework late (due to minor illness or absences) will generally be declined.
 
+\item Please turn in your homework on time. Homework that is turned in after I start to grade the
+papers will \emph{always} earn a grade of zero. 
 
 \item The course calendar may change. Changes to the schedule can be made in class, but 
 not noted anywhere else. It is your responsibility to
@@ -310,9 +348,10 @@ Retaliation against the student making the report, whether by students or Univer
 
 \end{enumerate}
 
-\subsubsection*{Academic Honesty Policy}
+\subsubsection*{Academic Honesty Policy\footnote{\url{https://catalog.unk.edu/undergraduate/academics/academic-regulations/academic-integrity-policy/}}}
 
-Academic honesty is essential to the existence and integrity of an institution of higher education. The
+Academic honesty is essential to the 
+existence and integrity of an institution of higher education. The
 responsibility for maintaining that integrity is shared by all members of the academic community. To
 further serve this end, the University of Nebraska at Kearney has a policy relating to academic integrity.
 The maintenance of academic honesty and integrity is a vital concern of the University community. Any
@@ -371,41 +410,6 @@ Conduct.
 
 \newpage
 
-\subsubsection*{Course Calendar}
-
-We will try to adhere to the following schedule, but we will modify it
-if needed. The exam dates will only be changed for a compelling
-reason; we won't delay an exam because we are behind the
-schedule. Neither will an exam date be moved forward because we are
-ahead of the schedule.
-
-Homework assignments are due at 23:59 local time on Saturday on the week they are assigned. 
-
-\vspace{0.1in}
-
-\begin{center}
-
-\begin{tabular}  {|l|l|l|l|}
-\hline
-{\bf Week}  & {\bf Week} &  {\bf Section(s)} & {\bf Topic(s)} \\
-\hline \hline 
-\wk    & 1/25 &    \S1.2   &   Introduction to Julia   \hfill \\
-\wk    & 2/1 & \S1.1      &  Floating point numbers \& calculus tools   \hfill \textbf{HW  \qz  HW \qz} \\
-\wk    & 2/8 &    \S2.1 & Errors and convergence rates    \hfill \textbf{HW  \qz} \\
-\wk    & 2/15  & \S2.2 -- \S2.7 &  Root Finding   \hfill  \textbf{HW \qz} \\
-\wk    & 2/22 &  \S2.2--\S2.7   &  Root Finding    \hfill \textbf{\ex\-\-, 26 February}   \\
-\wk    & 3/1    &  &  Linear equations  \hfill  \textbf{HW  \qz }  \\
-\wk    & 3/8     & \S3.1--\S3.4 & Interpolation \hfill \textbf{ HW  \qz }   \\
-\wk   & 3/15   & \S3.1 -- \S3.4   &   Interpolation   \hfill \textbf{ HW  \qz} \\
-\wk  &  3/22    & \S4.1--\S4.2 &  Numerical  integration  \hfill \textbf{HW  \qz}     \hfill \\
-\wk &  3/29     &   \S4.3 --\S4.4 &   Gaussian integration \& multiple integrals    \hfill \textbf{\ex\-\-, 2 April}  \\
-\wk  & 4/5 &   \S5.1--\S5.2 & Discrete \& continuous least squares  \hfill \textbf{HW    \qz} \\
-\wk   & 4/12  & \S5.3 &  Orthogonal polynomials and least squares  \hfill \textbf{HW \qz}   \\
-\wk   & 4/19   &   & Differential equations \hfill  \textbf{ \ex, 23 April}     \\
-\wk   & 4/26   &     & Differential equations   \hfill \\
-\wk   & 5/       &  &   \textbf{Final Exam, Wednesday 5 May, 8:00 am--10:00 am} \\ \hline
-\end{tabular}
-\end{center}
 
 
 
