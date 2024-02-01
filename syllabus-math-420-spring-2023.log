@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.15)  3 OCT 2022 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.15)  14 OCT 2022 14:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -623,42 +623,42 @@ LaTeX Warning: Unused global option(s):
 (syllabus-math-420-spring-2023.aux)
 \openout1 = `syllabus-math-420-spring-2023.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 92.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 94.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 94.
  (C:\Users\willisb\AppData\Roaming\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 92.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 94.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 94.
  (C:\Users\willisb\AppData\Roaming\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 92.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 94.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 94.
  (C:\Users\willisb\AppData\Roaming\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    ... okay on input line 94.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count351
@@ -719,16 +719,16 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 isodate: babel.sty has been loaded
-Package hyperref Info: Link coloring ON on input line 92.
+Package hyperref Info: Link coloring ON on input line 94.
 (syllabus-math-420-spring-2023.out) (syllabus-math-420-spring-2023.out)
 \@outlinefile=\write4
 \openout4 = `syllabus-math-420-spring-2023.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 92.
-Package microtype Info: Applying patch `item' on input line 92.
-Package microtype Info: Applying patch `toc' on input line 92.
-Package microtype Info: Applying patch `eqnum' on input line 92.
-Package microtype Info: Applying patch `footnote' on input line 92.
+LaTeX Info: Redefining \microtypecontext on input line 94.
+Package microtype Info: Applying patch `item' on input line 94.
+Package microtype Info: Applying patch `toc' on input line 94.
+Package microtype Info: Applying patch `eqnum' on input line 94.
+Package microtype Info: Applying patch `footnote' on input line 94.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1100.
@@ -736,7 +736,7 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 10, shrink: 10, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 92.
+LaTeX Info: Redefining \showhyphens on input line 94.
 Package microtype Info: Tracking enabled.
 Package microtype Info: Using default tracking set `smallcaps'.
 Package microtype Info: Adjustment of interword spacing enabled.
@@ -747,46 +747,46 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `futs' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 110.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 112.
  (C:\Users\willisb\AppData\Roaming\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 111.
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 113.
  (C:\Users\willisb\AppData\Roaming\MiKTeX\tex/latex/marvosym\umvs.fd) (C:\Users\willisb\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-mvs.cfg
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 159.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 163.
  (C:\Users\willisb\AppData\Roaming\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 159.
+(Font)              scaled to size 11.03998pt on input line 163.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 159.
+(Font)              scaled to size 8.27998pt on input line 163.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 159.
+(Font)              scaled to size 6.43999pt on input line 163.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 159.
+(Font)              scaled to size 11.03998pt on input line 163.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 159.
+(Font)              scaled to size 8.27998pt on input line 163.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 159.
+(Font)              scaled to size 6.43999pt on input line 163.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 159.
+(Font)              scaled to size 9.19998pt on input line 163.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 159.
+(Font)              scaled to size 6.99199pt on input line 163.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 159.
+(Font)              scaled to size 5.51999pt on input line 163.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 159.
+(Font)              scaled to size 9.19998pt on input line 163.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 159.
+(Font)              scaled to size 6.99199pt on input line 163.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 159.
+(Font)              scaled to size 5.51999pt on input line 163.
  [1
 
 {C:/Users/willisb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 167.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 171.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -795,35 +795,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (19.85992pt too wide) in paragraph at lines 224--241
+Overfull \hbox (19.85992pt too wide) in paragraph at lines 228--245
 []$[]$ [] $[]$ 
  []
 
-[2]
+[2] [3]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 292.
+(Font)              scaled to size 10.07397pt on input line 372.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 292.
+(Font)              scaled to size 7.63599pt on input line 372.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 292.
+(Font)              scaled to size 10.07397pt on input line 372.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 292.
- [3] [4] (syllabus-math-420-spring-2023.aux)
+(Font)              scaled to size 7.63599pt on input line 372.
+ [4] (syllabus-math-420-spring-2023.aux)
 Package rerunfilecheck Info: File `syllabus-math-420-spring-2023.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25676 strings out of 475389
- 519806 string characters out of 2786763
- 933864 words of memory out of 3000000
- 46411 multiletter control sequences out of 15000+600000
- 581782 words of font info for 253 fonts, out of 8000000 for 9000
+ 25686 strings out of 475389
+ 519875 string characters out of 2786763
+ 937888 words of memory out of 3000000
+ 46413 multiletter control sequences out of 15000+600000
+ 577870 words of font info for 255 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,1143b,575s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\willisb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\willisb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ectt0800.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\willisb\AppData\Local\MiKTeX\fonts/pk/ljfour/public/wasy/dpi720\wasyb10.pk><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/public/marvosym/marvosym.pfb><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on syllabus-math-420-spring-2023.pdf (4 pages, 101755 bytes).
+ 72i,8n,77p,1149b,575s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\willisb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\willisb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\willisb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ectt0800.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\willisb\AppData\Local\MiKTeX\fonts/pk/ljfour/public/wasy/dpi720\wasyb10.pk><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/public/marvosym/marvosym.pfb><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on syllabus-math-420-spring-2023.pdf (4 pages, 113687 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 76801 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 196 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 75265 words of extra memory for PDF output out of 89155 (max. 10000000)
 

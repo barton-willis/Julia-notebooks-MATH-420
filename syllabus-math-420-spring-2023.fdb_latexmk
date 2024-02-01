@@ -1,8 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1664826613 "c:/Users/willisb/Documents/Julia-notebooks-math-420/Julia-notebooks-MATH-420/syllabus-math-420-spring-2023.tex" "syllabus-math-420-spring-2023.pdf" "syllabus-math-420-spring-2023" 1664826629
+["pdflatex"] 1665776296 "c:/Users/willisb/Documents/Julia-notebooks-math-420/Julia-notebooks-MATH-420/syllabus-math-420-spring-2023.tex" "syllabus-math-420-spring-2023.pdf" "syllabus-math-420-spring-2023" 1665776311
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ectt0800.tfm" 993062338 1348 ad6a25e9916b0e5ddfcc7ffcb8d43448 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ectt1095.tfm" 993062342 1352 fa21dcb5ddc7d1dc47d14cd897fdeb0f ""
+  "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ectt1200.tfm" 993062344 1348 c48a0620e07683860afba1730adf9e53 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580393758 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Program Files/MiKTeX/tex/generic/babel/babel.sty" 1661764544 151613 ca1138ead98be47bdb29e138c3880089 ""
@@ -52,6 +53,7 @@
   "C:/Users/willisb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1663262850 294692 5ddc2e993d9c7bac863baec61d01d5dc ""
   "C:/Users/willisb/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi450/ectt0800.pk" 1598041434 11472 6fc973babc994d08853b9b6567a54db0 ""
   "C:/Users/willisb/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1610641662 21972 b8fe6d3040963225eb00b7a28cd0a844 ""
+  "C:/Users/willisb/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1597941975 24152 7559076aad35deecca77af24f601686a ""
   "C:/Users/willisb/AppData/Local/MiKTeX/fonts/pk/ljfour/public/wasy/dpi720/wasyb10.pk" 1626791385 20540 cb73f848e3df2d73bf1a0430ff52d6d0 ""
   "C:/Users/willisb/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1663262904 10775498 846c8e6ba4ae7b1fb3aeb578fcb4315c ""
   "C:/Users/willisb/AppData/Roaming/MiKTeX/fonts/tfm/public/fourier/fourier-alt-bold.tfm" 1135015376 224 4ac72e62f85410d4b37560babc0905f9 ""
@@ -161,10 +163,10 @@
   "C:/Users/willisb/AppData/Roaming/MiKTeX/tex/latex/tools/xspace.sty" 1636713860 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "C:/Users/willisb/AppData/Roaming/MiKTeX/tex/latex/wasysym/uwasy.fd" 1579696602 2296 c50bf1089c7a46a0d4e9a119e980be4e ""
   "C:/Users/willisb/AppData/Roaming/MiKTeX/tex/latex/wasysym/wasysym.sty" 1579696602 11252 7fbfbe7bbcbe1f73acbe32ae2f10c666 ""
-  "c:/Users/willisb/Documents/Julia-notebooks-math-420/Julia-notebooks-MATH-420/syllabus-math-420-spring-2023.tex" 1664826611 23693 e2e18d18a245817c94b8034687cf9893 ""
-  "syllabus-math-420-spring-2023.aux" 1664826627 660 307e34333d0885aaf4016d1890425246 "pdflatex"
+  "c:/Users/willisb/Documents/Julia-notebooks-math-420/Julia-notebooks-MATH-420/syllabus-math-420-spring-2023.tex" 1665776278 25368 3e01101303359893ca83db654fe5f1dd ""
+  "syllabus-math-420-spring-2023.aux" 1665776309 1173 22b1d9a4264a04010ba68cdc8d888b92 "pdflatex"
   "syllabus-math-420-spring-2023.out" 0 -1 0 "pdflatex"
-  "syllabus-math-420-spring-2023.tex" 1664826611 23693 e2e18d18a245817c94b8034687cf9893 ""
+  "syllabus-math-420-spring-2023.tex" 1665776278 25368 3e01101303359893ca83db654fe5f1dd ""
   (generated)
   "syllabus-math-420-spring-2023.aux"
   "syllabus-math-420-spring-2023.log"

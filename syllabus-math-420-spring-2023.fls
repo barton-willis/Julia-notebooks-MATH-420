@@ -1101,7 +1101,6 @@ INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\tex\latex\microtype\mt-mvs.cfg
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\tex\latex\microtype\mt-mvs.cfg
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futrc8t.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futrc8t.tfm
-INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futb8t.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futr8t.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futr8t.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\tex\latex\fourier\fmlfutmi.fd
@@ -1163,9 +1162,6 @@ INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-a
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\vf\public\fourier\futrc8t.vf
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futr8r.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-alt.tfm
-INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\vf\public\fourier\futb8t.vf
-INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futb8r.tfm
-INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-alt-bold.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futri8t.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\base\t1cmtt.fd
@@ -1187,6 +1183,7 @@ INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-a
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\vf\public\fourier\futr8t.vf
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futr8r.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-alt.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futr8t.tfm
@@ -1201,11 +1198,16 @@ INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futmi.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futmi.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-bb.tfm
 INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-bb.tfm
+INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\vf\public\fourier\futr8t.vf
+INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\futr8r.tfm
+INPUT C:\Users\willisb\AppData\Roaming\MiKTeX\fonts\tfm\public\fourier\fourier-alt.tfm
 INPUT syllabus-math-420-spring-2023.aux
 INPUT .\syllabus-math-420-spring-2023.out
 INPUT .\syllabus-math-420-spring-2023.out
 INPUT C:\Users\willisb\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\willisb\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
+INPUT C:\Users\willisb\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\willisb\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\willisb\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi450\ectt0800.pk
 INPUT C:\Users\willisb\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi450\ectt0800.pk
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\base\8r.enc
