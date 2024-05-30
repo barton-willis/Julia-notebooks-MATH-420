@@ -14582,7 +14582,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Google-page-rank">Google page rank<a class="anchor-link" href="#Google-page-rank">&#182;</a></h3><p><strong>MATH 420</strong> <br>
 <em>Spring 2021</em> <br></p>
-<p>We'll describe a method that is the basis of the Google page rank. Specifically, we would like a way to assign a numerical value, let's call it the <em>rank,</em> that corresponds to the <em>popularity</em> of a web page.</p>
+<p>We'll describe a method for measuring the popularity of a webpage. The method we describe  is the basis of the Google page rank. Specifically, we would like a way to assign a numerical value, let's call it the <em>rank,</em> that corresponds to the <em>popularity</em> of a web page.</p>
 <p>To start our thinking about this, let's imagine that a popular webpage, say the <em>Wall Street Journal</em> (WSJ), has a link to the <em>Kearney Hub.</em>  The editor of the <em>Hub</em> will be <em>thrilled</em> with the traffic that might result from being linked from such a popular 
 webpage. But if the <em>Kearney Hub</em> links to the <em>Wall Street Journal,</em> I'd guess that the editors of the WSJ would barely notice. So our first insight is that the rank of a page depends on the ranks of the pages that link to it. If a highly ranked page links to the <em>Kearney Hub,</em> for example, it raises the rank of the <em>Hub.</em>  But if a lowly ranked page links to the <em>Hub,</em> it doesn't affect the rank of the <em>Hub</em> all that much.</p>
 <p>Our second insight is that if a page links to many pages, that diminishes the influence of a link. A visitor to a page that links to a million other pages, for example, might click on any one of a million links, but a visitor to a page that only links to just ten pages has a better chance of visiting one of these ten pages. So the more links a page has, the less influence it has on the ranks of the pages it links to. We can think of each link from a web page as a vote, with the weight of each vote as $1/n$, where $n$ is the number of links from a web page. Thus, the sum of all the votes <em>from</em> each web page is one.</p>
@@ -14635,7 +14635,7 @@ $$
 These equations are <em>not</em> homogeneous and they are <em>over determined</em> (the number of unknowns is greater than the number of knowns).  It is <em>not</em> certain that the equations have a solution, and if they do have a solution, it's possible that some of the ranks will be negative. Following the logic of how these equations were determined, a negative rank doesn't make much sense.</p>
 <p>The Perron-Forbenious theorem comes to the rescue. This theorem tells us that for any Markov matrix $M$, there is a vector $\mathbf{x}$ such that $M \mathbf{x} = \mathbf{x}$
 and $1 = \sum x_k$, where each $x_k$ is nonnegative. But the solution isn't always unique.</p>
-<p>More generally, if $\mathbf{x}$ is a nonzero vector and $\lambda$ is a number such that $M \mathbf{x} = \lambda \mathbf{x}$, we say that $\mathbf{x}$ is an <em>eigenvector</em> of the matrix $M$ with <em>eigenvalue</em> $\lambda$. In eigenvector/eigenvalue language, the Perron-Forbenious theorem tells us that if $M$ is a Markov matrix, the matrix $M$ has at least one eigvector with eigenvalue one.</p>
+<p>More generally, if $\mathbf{x}$ is a nonzero vector and $\lambda$ is a number such that $M \mathbf{x} = \lambda \mathbf{x}$, we say that $\mathbf{x}$ is an <em>eigenvector</em> of the matrix $M$ with <em>eigenvalue</em> $\lambda$. In eigenvector/eigenvalue language, the Perron-Forbenious theorem tells us that if $M$ is a Markov matrix, the matrix $M$ has at least one eigenvector with eigenvalue one.</p>
 <p>Let's have Julia solve the linear equations. To do this, we'll need the package <code>LinearAlgebra</code>.</p>
 
 </div>
@@ -14957,7 +14957,7 @@ use Julia's <code>\</code> operator to solve the over determined linear system.<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Returning to the idea that the ranks are the solution to a fixed point problem, an alterative way to solve the equations is to use fixed point iteration. When the input matrix is a Markov matrix and sum the members of the the initial term of the fixed 
+<p>Returning to the idea that the ranks are the solution to a fixed point problem, an alternative way to solve the equations is to use fixed point iteration. When the input matrix is a Markov matrix and sum the members of the initial term of the fixed 
 sequence is one, this function will return a solution whose terms sum to one.</p>
 <p>Here is a simple function that does the iteration.</p>
 
@@ -15510,7 +15510,7 @@ where $N$ is the number of nodes, $I$ is an identity matrix, and $\alpha \in [0,
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>How does Julia's <code>\</code> operator chose one solution from infinitely many solutions? The user documentaiton for <code>\</code> says that the solution is the</p>
+<p>How does Julia's <code>\</code> operator chose one solution from infinitely many solutions? The user documentation for <code>\</code> says that the solution is the</p>
 <p><em>minimum-norm least squares solution computed by a pivoted QR factorization of A and a rank estimate of A based on the R factor</em>.</p>
 <p>The meaning of this is beyond our class.</p>
 
@@ -15524,7 +15524,7 @@ where $N$ is the number of nodes, $I$ is an identity matrix, and $\alpha \in [0,
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>But the fixed point mathod gives us something else. When the starting value is 
+<p>But the fixed point method gives us something else. When the starting value is 
 $[1,0,0,0]$, we get an error because the fixed point sequence doesn't converge.</p>
 
 </div>
@@ -15633,7 +15633,7 @@ $[1,0,0,0]$, we get an error because the fixed point sequence doesn't converge.<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One way insure that the solution is unique is to introduce a fictitious ''super node'' that is linked to every page and every page is linked to the super node. Effectively, the super node idea includes the possibility that a user will visit a page by entering a url instead of randomly clicking.</p>
+<p>One way ensure that the solution is unique is to introduce a fictitious ''super node'' that is linked to every page and every page is linked to the super node. Effectively, the super node idea includes the possibility that a user will visit a page by entering an url instead of randomly clicking.</p>
 
 </div>
 </div>
@@ -15693,7 +15693,7 @@ $[1,0,0,0]$, we get an error because the fixed point sequence doesn't converge.<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>With a nonzero damping factor, the coefficient matrix is <em>not</em> Markov. Since the modified matrix is not a Markov matrix, the probablistic interpertation of the matrix is <em>invalid</em>. Confusingly, the patent application uses probabilty language for method with the damping factor. Arguably, I'd say the patent application is a more of a bussines plan then it is  science.</p>
+<p>With a nonzero damping factor, the coefficient matrix is <em>not</em> Markov. Since the modified matrix is not a Markov matrix, the probabilistic interpretation of the matrix is <em>invalid</em>. Confusingly, the patent application uses probability language for method with the damping factor. Arguably, I'd say the patent application is a more of a business plan then it is science.</p>
 
 </div>
 </div>
@@ -15959,8 +15959,7 @@ $[1,0,0,0]$, we get an error because the fixed point sequence doesn't converge.<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Google's patent application says that in addition to the damping factor, it uses an intial 
-term of the fixed point sequence with each member with the same value. I'm not sure of the theory behind the method, but apparently, with these modifications, the fixed point sequence converges to a unique soljution. My guess is that the damping factor has more to do with preventing overflow than with convergence.</p>
+<p>Google's patent application says that in addition to the damping factor, it uses an initial term of the fixed point sequence with each member with the same value. I'm not sure of the theory behind the method, but apparently, with these modifications, the fixed point sequence converges to a unique solution. My guess is that the damping factor has more to do with preventing overflow than with convergence.</p>
 
 </div>
 </div>
