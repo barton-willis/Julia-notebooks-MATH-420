@@ -9,7 +9,7 @@ Some files are fairly polished, others are not. Some worksheets were created jus
 
 I've been working through these worksheets, and I am attempting to fix the spelling and grammar errors, repair broken URL links, append documentation strings to most functions, change to more idiomatic Julia, and to ensure the worksheets run using Julia 1.10. Eventually, I might attempt to improve all the graphics in these notebooks to be nicely labeled and to use a uniform color scheme.
 
-It's my aim to preserve these worksheets as they were actually used in class. For the most part, I'm trying to avoid the temptation to extend these IJulia notebooks beyond the class content and rewriting them using more formal language. But I'm open to extending these worksheets to give more explanations of the theory behind the methods.
+It's my aim to mostly preserve these worksheets as they were actually used in class. For the most part, I'm trying to avoid the temptation to extend these IJulia notebooks beyond the class content and rewriting them using more formal language. But I'm open to extending these worksheets to give more explanations of the theory behind the methods.
 
 If you have suggestions for improvements, please communicate them to me.
 
